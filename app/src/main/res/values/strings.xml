@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Grocery App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="todo1">TODO1</string>
+    <string name="email">Email</string>
+    <string name="sign_in">Sign In</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up_2">Sign Up</string>
+    <string name="log_in_2">Log In</string>
+    <string name="fiyyf">Sign Up</string>
+    <string name="log_in_4">Log in</string>
+    <string name="sign_up_new">Sign up</string>
+    <string name="sign_up_6">Sign up</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up__8">Sign up</string>
+    <string name="sign_up_1">Sign up</string>
+    <string name="confirm_password_x">Confirm Password</string>
+
+    <string name="name">Name</string>
+    <string name="sign_up_x">Sign up</string>
+    <string name="email_address">Email Address</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in_45">Sign in</string>
+    <string name="password">Password</string>
+    <string name="log_in__3">Log in</string>
+    <string name="log_in__5">Log in</string>
+    <string name="don_t_have_an_account__ef">Don\'t have an account?</string>
+    <string name="sign_up__bsevf">Sign up</string>
+    <string name="category">Category</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="offers">Offers</string>
+    <string name="new_products">New Products</string>
+    <string name="my_orders">My Orders</string>
+    <string name="my_carts">My Carts</string>
+    <string name="profile">Profile</string>
+    <string name="search_products">Search Products</string>
+    <string name="product_name">Product Name</string>
+    <string name="popular_products">Popular Products</string>
+    <string name="description">Description</string>
+    <string name="fruits">Fruits</string>
+    <string name="category_names">Category names</string>
+    <string name="explore_products">Explore Products</string>
+    <string name="product_name_1">Product Name</string>
+    <string name="recommended_products">Recommended Products</string>
+    <string name="view_all">View All</string>
+    <string name="your_name">Your Name</string>
+</resources>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:textColor="#5B5B66"
+        android:layout_marginTop="20dp"
+        android:id="@+id/signup_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/sign_up_x"
+        android:textSize="40sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edittext_background"
+        android:fontFamily="@font/segoe_ui"
+        android:hint="@string/name"
+        android:inputType="textEmailAddress"
+        android:padding="18dp"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signup_header" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/emailid"
+        app:layout_constraintTop_toBottomOf="@id/nameid"
+        android:fontFamily="@font/segoe_ui"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:padding="18dp"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edittext_background" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/passwordid"
+        app:layout_constraintTop_toBottomOf="@id/emailid"
+        android:fontFamily="@font/segoe_ui"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:padding="18dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_background" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/confirm_password_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edittext_background"
+        android:fontFamily="@font/segoe_ui"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:padding="18dp"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordid" />
+
+    <Button
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/confirm_password_id"
+        android:id="@+id/button_for_sign_up"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="#fff"
+        android:fontFamily="@font/segoe_ui"
+        android:textAllCaps="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:padding="15dp"
+        android:text="@string/sign_up_1"
+         />
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/aleady_account_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have_an_account"
+        android:fontFamily="@font/segoe_ui"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_for_sign_up" />
+
+    <TextView
+        android:textStyle="italic"
+        android:id="@+id/sign_in_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/segoe_ui"
+        android:text="@string/sign_in_45"
+        android:textColor="#5B5B66"
+        android:textSize="21sp"
+        app:layout_constraintStart_toEndOf="@+id/aleady_account_check"
+        app:layout_constraintTop_toBottomOf="@+id/button_for_sign_up" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_for_sign_up" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

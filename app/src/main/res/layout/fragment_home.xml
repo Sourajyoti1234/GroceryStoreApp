@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.home.HomeFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+    <ScrollView
+        android:id="@+id/scroll_View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+
+            android:fontFamily="@font/poppinsmedium"
+            android:layout_marginTop="20dp"
+            android:layout_margin="10dp"
+            android:padding="13dp"
+            android:id="@+id/search_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_search_icon"
+            android:background="@drawable/search_background"
+            android:hint="@string/search_products"
+            android:drawablePadding="10dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="5dp">
+
+            <LinearLayout
+                android:id="@+id/popular_card"
+                android:layout_width="170dp"
+                android:layout_height="280dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/fruits_pop"
+                android:backgroundTintMode="src_over"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:paddingStart="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2EB086"
+
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="@string/popular_products"
+                        android:textAllCaps="true"
+                        android:textColor="#323232"
+                        android:textSize="19sp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#2EB086"
+                        android:src="@drawable/next"
+
+                        />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#2EB086"
+                        android:fontFamily="@font/segoe_ui"
+                        android:padding="3dp"
+                        android:text="View All"
+                        android:textColor="#323232"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/pop_rec"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@id/popular_card" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/explore_products"
+                android:layout_weight="1"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:text="@string/explore_products"
+                android:textColor="#323232"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewAll_explore"
+                android:text="@string/view_all"
+                android:fontFamily="@font/segoe_ui"
+                android:gravity="end"
+                android:layout_marginRight="7dp"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recommended_products"
+                android:layout_weight="1"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:text="@string/recommended_products"
+                android:textColor="#323232"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewAll_recommended"
+                android:text="@string/view_all"
+                android:fontFamily="@font/segoe_ui"
+                android:gravity="end"
+                android:layout_marginRight="7dp"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recommended_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            />
+
+
+
+
+     </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
